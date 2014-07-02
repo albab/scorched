@@ -4,9 +4,11 @@ class IndexController < ApplicationController
   
   def index
     w_api = Wunderground.new("1f8d5a20a4815b2f")
-    expression = w_api.conditions_for("85003")    
-    current_temp = expression["current_observation"]["temperature_string"]
+    data = w_api.conditions_for("85003")    
+    current_temp = data["current_observation"]["temperature_string"]
+    current_city = data["current_observation"]["display_location"]["city"]
     @forecast = current_temp
+    @city = current_city
   end
   
 end
