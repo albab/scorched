@@ -7,8 +7,10 @@ class IndexController < ApplicationController
     data = w_api.conditions_for("85003")    
     current_temp = data["current_observation"]["temperature_string"]
     current_city = data["current_observation"]["display_location"]["city"]
-    @forecast = current_temp
+    current_weather = data["current_observation"]["weather"]
+    @temperature = current_temp
     @city = current_city
+    @weather = current_weather
   end
   
 end
