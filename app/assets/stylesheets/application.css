@@ -25,7 +25,7 @@
 
 .city {
 	font-size: 80px;
-	padding-top: 2%;
+	padding-top: 0%;
     	padding-left: 47%;
 }
 
@@ -33,7 +33,6 @@
 
 .weather {
 	font-size: 90px;
-	padding-top: 0%;
     	padding-left: 25%;
 }
 
@@ -41,4 +40,9 @@
 .updated {
 	font-size: 20px;
     	padding-left: 48%;
+}
+
+.wind {
+	font-size: 40px;
+    	padding-left: 55%;
 }

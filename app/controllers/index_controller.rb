@@ -9,10 +9,13 @@ class IndexController < ApplicationController
     current_city = data["current_observation"]["display_location"]["city"]
     current_weather = data["current_observation"]["weather"]
     current_last_refreshed = data["current_observation"]["observation_time"]
+    current_wind = data["current_observation"]["wind_string"]
     @temperature = current_temp
     @city = current_city
+    @wind = current_wind
     @weather = current_weather    
     @last_updated_at = current_last_refreshed
+    
     
   end
   
