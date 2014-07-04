@@ -26,23 +26,36 @@
 .city {
 	font-size: 80px;
 	padding-top: 0%;
-    	padding-left: 47%;
+    	padding-left: 55%;
 }
 
 
 
 .weather {
 	font-size: 90px;
-    	padding-left: 25%;
+    	padding-left: 31%;
 }
 
 
 .updated {
 	font-size: 20px;
-    	padding-left: 48%;
+    	padding-left: 57%;
 }
 
 .wind {
 	font-size: 40px;
+    	padding-left: 42%;
+}
+
+.feel {
+	font-size: 40px;
     	padding-left: 55%;
 }
+
+body {
+	background-color: <%= @test_color %>;
+}
+
+
+
+

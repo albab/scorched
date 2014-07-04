@@ -12,9 +12,25 @@ class IndexController < ApplicationController
     current_wind = data["current_observation"]["wind_string"]
     @temperature = current_temp
     @city = current_city
-    @wind = current_wind
+    @wind = current_wind[0..18]
     @weather = current_weather    
     @last_updated_at = current_last_refreshed
+    
+    @color = "green"
+    @feedback = ""
+    parsed_temp = current_temp[0..2].to_i
+    
+    @test = parsed_temp
+    int_test = parsed_temp.to_i
+    
+    if int_test > 105 
+      @feedback = "HEY"
+    else 
+      @feeback = ""
+    end
+    
+    @test_color = "red"
+      
     
     
   end
