@@ -1,3 +1,11 @@
+<%= form_for @zipcode do |f| %>
+  <p>
+    <%= f.text_field :data %> 
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>
+
+
 <div class="temperature">
 	it is <%= @temperature %> <br>
 </div>
@@ -16,11 +24,11 @@
 
 <div class="updated">
 	<%= @last_updated_at %>
-	<%= @ip %>
 </div>
 
 
 <div class="updated">
 </div>
+
 
 

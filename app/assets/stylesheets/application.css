@@ -54,6 +54,13 @@
 
 body {
 	background-color: <%= @test_color %>;
+	padding-right:15%;
+}
+
+
+.change {
+	padding-top: 10%;
+	padding-left: 84%;
 }
 
 
